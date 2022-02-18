@@ -4,7 +4,7 @@ root = true
 charset = utf-8
 end_of_line = lf
 indent_size = 2
-indent_style = tab
+indent_style = space
 insert_final_newline = false
 max_line_length = 120
 tab_width = 2
@@ -41,7 +41,6 @@ ij_scss_use_double_quotes = true
 ij_scss_value_alignment = 0
 
 [*.vue]
-indent_style = tab
 ij_continuation_indent_size = 4
 ij_visual_guides = 80,120
 ij_vue_indent_children_of_top_level = template
