@@ -1,6 +1,39 @@
 <template>
-  <the-header />
-  <main class="main"></main>
+	<the-header />
+	<main class="main">
+    <section class="hero">
+      <div class="sonna">
+        <!--placeholder-->
+      </div>
+      <div class="intro">
+        <!--placeholder-->
+      </div>
+      <div class="etails">
+        <!--placeholder-->
+      </div>
+      <div class="socials">
+        <!--placeholder-->
+      </div>
+      <div class="auto-scroll">
+        <!--placeholder-->
+      </div>
+    </section>
+    <section class="about">
+      <div class="about-me">
+        <!--placeholder-->
+      </div>
+      <div class="about-me-details">
+        <!--placeholder-->
+      </div>
+      -
+    </section>
+    <section class="history">
+
+    </section>
+    <section class="projects">
+
+    </section>
+  </main>
 </template>
 
 <script>
