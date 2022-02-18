@@ -1,8 +1,17 @@
 <template>
-  <p>Hello, World!</p>
+  <the-header />
+  <main class="main"></main>
 </template>
 
-<script></script>
+<script>
+import TheHeader from "@/components/TheHeader";
+
+export default {
+  components: {
+    TheHeader,
+  },
+};
+</script>
 
 <style lang="scss">
 :root {
@@ -19,6 +28,18 @@ body {
 
   font-family: "Poppins", sans-serif;
   font-size: 14px;
+}
+
+#app {
+	position: relative;
+  width: 1422px;
+  margin: 0 auto;
+}
+
+.main {
+  min-height: 200vh;
+  border-right: 2px solid var(--color-elment);
+  width: calc(100% - 70px);
 }
 
 a {
