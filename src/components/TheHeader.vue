@@ -50,13 +50,13 @@ export default {
     }
 
     &__item {
-      text-transform: uppercase;
-
       font-size: 1.75em;
+      font-weight: bold;
       font-family: "Montserrat", sans-serif;
 
       writing-mode: vertical-rl;
       text-orientation: mixed;
+      text-transform: uppercase;
     }
   }
 }

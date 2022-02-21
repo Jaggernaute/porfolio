@@ -1,47 +1,28 @@
 <template>
-	<the-header />
-	<main class="main">
-    <section class="hero">
-      <div class="sonna">
-        <!--placeholder-->
-      </div>
-      <div class="intro">
-        <!--placeholder-->
-      </div>
-      <div class="etails">
-        <!--placeholder-->
-      </div>
-      <div class="socials">
-        <!--placeholder-->
-      </div>
-      <div class="auto-scroll">
-        <!--placeholder-->
-      </div>
-    </section>
+  <the-header />
+  <main class="main">
+    <the-hero />
     <section class="about">
-      <div class="about-me">
+      <div class="about__me">
         <!--placeholder-->
       </div>
-      <div class="about-me-details">
+      <div class="about__details">
         <!--placeholder-->
       </div>
-      -
     </section>
-    <section class="history">
-
-    </section>
-    <section class="projects">
-
-    </section>
+    <section class="history"></section>
+    <section class="projects"></section>
   </main>
 </template>
 
 <script>
 import TheHeader from "@/components/TheHeader";
+import TheHero from "@/components/TheHero";
 
 export default {
   components: {
     TheHeader,
+    TheHero,
   },
 };
 </script>
@@ -64,7 +45,7 @@ body {
 }
 
 #app {
-	position: relative;
+  position: relative;
   width: 1422px;
   margin: 0 auto;
 }
