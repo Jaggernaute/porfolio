@@ -37,7 +37,6 @@ export default {
   &__content {
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
     border-left: 2px solid var(--color-elment);
   }
 }

@@ -51,7 +51,9 @@ export default {
     font-family: Poppins, serif;
     font-weight: 900;
     font-size: 2em;
-    background-color: var(--color-bg);
+
+    color: var(--color-bg);
+    background-color: var(--color-elment);
 
     height: 38px;
 
@@ -66,11 +68,12 @@ export default {
     color: var(--color-bg);
 
     &::before {
+      background-color: var(--color-action);
       width: auto;
-      left: -12px;
-      background-color: var(--color-elment);
-      color: var(--color-bg);
+      left: -24px;
+      padding: 0 24px;
     }
+
     &__text {
       color: var(--color-bg);
     }
