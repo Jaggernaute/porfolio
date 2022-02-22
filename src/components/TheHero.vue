@@ -6,7 +6,7 @@
         <!--placeholder-->
       </div>
       <div class="intro">
-        <!--placeholder-->
+        <ButtonRound>Explore</ButtonRound>
       </div>
       <div class="details">
         <!--placeholder-->
@@ -20,9 +20,11 @@
 
 <script>
 import TheAutoScroll from "@/components/TheAutoScroll";
+import ButtonRound from "@/components/ButtonRound";
+
 export default {
   name: "TheHero",
-  components: { TheAutoScroll },
+  components: { ButtonRound, TheAutoScroll },
 };
 </script>
 
@@ -38,5 +40,13 @@ export default {
     background: rgba(0, 0, 0, 0.5);
     border-left: 2px solid var(--color-elment);
   }
+}
+
+// temp
+.intro {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
 }
 </style>
