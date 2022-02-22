@@ -32,6 +32,7 @@ export default {
   --color-bg: #373e48;
   --color-text: #f6faff;
   --color-elment: var(--color-text);
+  --color-action: #ef8d8d;
 }
 
 body {

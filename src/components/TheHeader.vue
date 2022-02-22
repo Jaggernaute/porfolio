@@ -1,7 +1,7 @@
 <template>
   <header class="header">
-    <div class="header__hamburger"></div>
     <nav class="header__nav">
+      <img class="header__hamburger" src="@/assets/hamburger.svg" alt="hamburger" />
       <ul class="header__nav__list">
         <li class="header__nav__item">
           <a class="header__nav__link" href="#">home</a>
@@ -30,11 +30,29 @@ export default {
 .header {
   position: absolute;
   right: 0;
-  width: 70px;
+  width: 38px;
+  height: 100%;
+
+  &__hamburger {
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    will-change: transform;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 
   &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+    width: 38px;
+
     position: fixed;
-    width: 70px;
     top: 26px;
 
     &__list {
@@ -57,6 +75,12 @@ export default {
       writing-mode: vertical-rl;
       text-orientation: mixed;
       text-transform: uppercase;
+      transition: color 0.3s ease-in-out;
+      will-change: color;
+
+      &:hover {
+        color: var(--color-action);
+      }
     }
   }
 }
