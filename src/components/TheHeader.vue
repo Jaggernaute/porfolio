@@ -1,7 +1,7 @@
 <template>
-  <header class="header">
+  <header class="header" :class="{ open: isMenuOpen, closed: !isMenuOpen }">
     <nav class="header__nav">
-      <img class="header__hamburger" src="@/assets/hamburger.svg" alt="hamburger" />
+      <img @click="toggleMenu" class="header__hamburger" src="@/assets/hamburger.svg" alt="hamburger" />
       <ul class="header__nav__list">
         <li class="header__nav__item">
           <a class="header__nav__link" href="#">home</a>
@@ -23,6 +23,16 @@
 <script>
 export default {
   name: "TheHeader",
+  data() {
+    return {
+      isMenuOpen: false,
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
+    },
+  },
 };
 </script>
 
@@ -37,12 +47,8 @@ export default {
     width: 38px;
     height: 38px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: transform 0.5s ease;
     will-change: transform;
-
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 
   &__nav {
@@ -62,12 +68,19 @@ export default {
       align-items: center;
       gap: 68px;
 
-      height: 80vh;
       margin: 0;
       padding: 0;
+
+      transform-origin: top;
+      transition: height 0.5s ease-in-out;
     }
 
     &__item {
+      transform-origin: top;
+      transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
+      will-change: color, height;
+      overflow: hidden;
+
       font-size: 1.75em;
       font-weight: bold;
       font-family: "Montserrat", sans-serif;
@@ -75,12 +88,35 @@ export default {
       writing-mode: vertical-rl;
       text-orientation: mixed;
       text-transform: uppercase;
-      transition: color 0.3s ease-in-out;
-      will-change: color;
 
       &:hover {
         color: var(--color-action);
       }
+    }
+  }
+}
+
+.closed .header {
+  &__hamburger {
+    transform: rotate(135deg);
+  }
+
+  &__nav {
+    &__list {
+      transition: 1s ease-in-out;
+      height: 20vh;
+    }
+  }
+}
+
+.open .header {
+  &__hamburger {
+    transform: rotate(0deg);
+  }
+
+  &__nav {
+    &__list {
+      height: 80vh;
     }
   }
 }
