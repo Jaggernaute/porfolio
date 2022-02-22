@@ -2,14 +2,7 @@
   <the-header />
   <main class="main">
     <the-hero />
-    <section class="about">
-      <div class="about__me">
-        <!--placeholder-->
-      </div>
-      <div class="about__details">
-        <!--placeholder-->
-      </div>
-    </section>
+    <the-about />
     <section class="history"></section>
     <section class="projects"></section>
   </main>
@@ -18,9 +11,11 @@
 <script>
 import TheHeader from "@/components/TheHeader";
 import TheHero from "@/components/TheHero";
+import TheAbout from "@/components/TheAbout";
 
 export default {
   components: {
+    TheAbout,
     TheHeader,
     TheHero,
   },
@@ -55,6 +50,21 @@ body {
   min-height: 200vh;
   border-right: 2px solid var(--color-elment);
   width: calc(100% - 70px);
+
+  & > section {
+    position: relative;
+    width: 100%;
+
+    &::after {
+      content: "";
+      height: 2px;
+      width: 100vw;
+      right: 0;
+      bottom: -2px;
+      position: absolute;
+      background: var(--color-elment);
+    }
+  }
 }
 
 a {

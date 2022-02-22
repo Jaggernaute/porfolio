@@ -72,12 +72,12 @@ export default {
       padding: 0;
 
       transform-origin: top;
-      transition: height 0.5s ease-in-out;
+      transition: height 0.75s ease-in-out;
     }
 
     &__item {
       transform-origin: top;
-      transition: color 0.3s ease-in-out, transform 0.5s ease-in-out;
+      transition: color 0.3s ease-in-out;
       will-change: color, height;
       overflow: hidden;
 
@@ -103,7 +103,7 @@ export default {
 
   &__nav {
     &__list {
-      transition: 1s ease-in-out;
+      transition: 0.75s ease-in-out;
       height: 20vh;
     }
   }
