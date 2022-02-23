@@ -3,7 +3,7 @@
   <main class="main">
     <the-hero />
     <the-about />
-    <section class="history"></section>
+    <the-history />
     <section class="projects"></section>
   </main>
 </template>
@@ -12,12 +12,14 @@
 import TheHeader from "@/components/TheHeader";
 import TheHero from "@/components/TheHero";
 import TheAbout from "@/components/TheAbout";
+import TheHistory from "@/components/TheHistory";
 
 export default {
   components: {
-    TheAbout,
     TheHeader,
     TheHero,
+    TheAbout,
+    TheHistory,
   },
 };
 </script>

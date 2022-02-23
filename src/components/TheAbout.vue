@@ -41,7 +41,7 @@ import ButtonRound from "@/components/ButtonRound";
 
 export default {
   name: "TheAbout",
-  components: {ButtonRound},
+  components: { ButtonRound },
 };
 </script>
 
