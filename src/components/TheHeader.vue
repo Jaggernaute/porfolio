@@ -38,6 +38,7 @@ export default {
 
 <style lang="scss" scoped>
 .header {
+  user-select: none;
   position: absolute;
   right: 0;
   width: 38px;

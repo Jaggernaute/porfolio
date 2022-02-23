@@ -20,6 +20,7 @@ export default {
 
 <style lang="scss" scoped>
 .btn {
+  user-select: none;
   transition: all 0.5s ease-in-out;
   position: relative;
 

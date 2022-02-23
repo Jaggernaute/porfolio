@@ -23,6 +23,8 @@ export default {
 
 <style lang="scss" scoped>
 .auto-scroll {
+  user-select: none;
+
   display: flex;
   align-items: center;
   gap: 20px;
